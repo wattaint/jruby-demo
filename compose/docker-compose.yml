@@ -7,9 +7,11 @@ services:
       dockerfile: ../Dockerfile-rails
     network_mode: bridge
     volumes:
+      - rails_data:/data
       - rails_log:/rails/log
       - rails_tmp:/rails/tmp
 
 volumes:
+  rails_data: {}
   rails_log: {}
   rails_tmp: {}
