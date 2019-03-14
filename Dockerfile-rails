@@ -1,0 +1,6 @@
+FROM jruby:9.2.6.0
+
+COPY Gemfile Gemfile.lock /
+RUN bundle install
+
+WORKDIR /rails
