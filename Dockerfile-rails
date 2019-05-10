@@ -4,3 +4,4 @@ COPY Gemfile Gemfile.lock /
 RUN bundle install
 
 WORKDIR /rails
+COPY . /rails

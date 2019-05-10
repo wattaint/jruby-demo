@@ -6,6 +6,8 @@ services:
       context: ../rails
       dockerfile: ../Dockerfile-rails
     network_mode: bridge
+    tmpfs:
+      - /rails/tmp/pids
     volumes:
       - rails_data:/data
       - rails_log:/rails/log
